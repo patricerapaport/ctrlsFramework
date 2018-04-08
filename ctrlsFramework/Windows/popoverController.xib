@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="popoverController" customModule="testinput" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="EXS-AY-D1H" id="gvc-6Z-GW9"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField identifier="label" horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXS-AY-D1H">
+                    <rect key="frame" x="0.0" y="0.0" width="423" height="22"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="left" title="Label" drawsBackground="YES" id="dhH-f3-Hnv">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EXS-AY-D1H" secondAttribute="bottom" id="12k-OT-snm"/>
+                <constraint firstItem="EXS-AY-D1H" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="L1Q-aw-mf9"/>
+                <constraint firstItem="EXS-AY-D1H" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="UP5-eV-LaC"/>
+                <constraint firstAttribute="trailing" secondItem="EXS-AY-D1H" secondAttribute="trailing" id="bGB-YS-25E"/>
+            </constraints>
+            <point key="canvasLocation" x="110.5" y="98"/>
+        </customView>
+    </objects>
+</document>
